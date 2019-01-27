@@ -1,0 +1,32 @@
+{
+  "name": "winpos",
+  "version": "1.0.0",
+  "description": "A small nodejs utility to get the position of all windows matching a particular name on the screen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seiyria/winpos.git"
+  },
+  "keywords": [
+    "win",
+    "windows",
+    "position",
+    "c#",
+    "edge",
+    "edge-js",
+    "get-position",
+    "window"
+  ],
+  "author": "Kyle Kemp <kyle@seiyria.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seiyria/winpos/issues"
+  },
+  "homepage": "https://github.com/seiyria/winpos#readme",
+  "dependencies": {
+    "edge-js": "^11.3.0"
+  }
+}
