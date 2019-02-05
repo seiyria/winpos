@@ -84,6 +84,16 @@ public class Startup
 
   public async Task<object> Invoke(string windowTitle)
   {
-    return FindWindowsWithText(windowTitle).Select(w => WindowBounds(w));
+    return FindWindowsWithText(windowTitle).Select(w => {
+      Rect bounds = WindowBounds(w);
+
+      return new { 
+        Left = bounds.Left, 
+        Right = bounds.Right, 
+        Top = bounds.Top,
+        Bottom = bounds.Bottom,
+        Name = GetWindowText(w)
+      };
+    });
   }
 }
